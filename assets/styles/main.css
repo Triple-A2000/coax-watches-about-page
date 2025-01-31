@@ -62,6 +62,7 @@ li + li {
 
 .menu-toggle {
     display: none;
+    line-height: 56px;
     font-size: 30px;
     cursor: pointer;
     color: #FFD586;
@@ -106,12 +107,20 @@ li + li {
   background-color: #0b0b0c;
 }
 
+.contact-us {
+  background-color: #5a5a5a;
+}
+
 .hero, .craftsmanship {
   height: 70vh;
 }
 
 .mission, .collection {
   height: 50vh;
+}
+
+.contact-us {
+  height: 15vh;
 }
 
 .container {
@@ -122,7 +131,7 @@ li + li {
 
 /* Centered sections */
 
-.group-1, .group-2 {
+.group-1, .group-2, .group-3 {
   display: flex;
   flex-direction: column;
   justify-content: center;   
@@ -130,13 +139,13 @@ li + li {
   max-width: 500px;
 }
 
-.group-1 {
-  align-items: left; 
-}
-
-.group-2 {
+.group-2, .group-3 {
   align-items: center; 
   margin: 0 auto;
+}
+
+.group-1 {
+  align-items: left; 
 }
 
 /* Typography */
@@ -152,6 +161,13 @@ h2 {
   letter-spacing: 1px;
 }
 
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  font-family: "Cormorant", sans-serif;
+}
+
 p {
   font-size: 1.2em;
   font-family: "Open Sans", sans-serif;
@@ -165,9 +181,31 @@ h1 span, h2 span {
   color: #FFD586;
 }
 
+h3 span {
+  color: #FFD586;
+}
+
 h1, h2, p {
   text-align: center;
 }
+
+/* Contact Btn */
+
+.contact-us-btn {
+  background-color: #FFD586;
+  color: #000000;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.contact-us-btn:hover {
+background-color: #ffba3a;
+}
+
 
 /*-------------------------------*/
 /* Footer                        */
@@ -183,7 +221,7 @@ footer p {
   line-height: 100px;
   font-size: 18px;
   font-weight: 400;
-  color: rgb(255 255 255 / 75%);
+  color: #ffffffbf;
 }
 
 .contact-footer ul {
@@ -254,6 +292,10 @@ a:visited, a:link {
     height: 40vh;
   }
 
+  .contact-us {
+    height: 8vh;
+  }
+
   .container {
     width: 90%;
   }
@@ -270,6 +312,10 @@ a:visited, a:link {
 
   h2 {
     font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1.3em;
   }
 
   p {
@@ -309,6 +355,10 @@ a:visited, a:link {
     font-size: 1.5em;
   }
 
+  h3 {
+    font-size: 1.1em;
+  }
+
   p {
     font-size: 0.9em;
   }
@@ -319,6 +369,10 @@ a:visited, a:link {
 
   .mission, .collection {
     height: 35vh;
+  }
+
+  .contact-us {
+    height: 6vh;
   }
 
   .container {
