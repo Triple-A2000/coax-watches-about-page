@@ -338,6 +338,18 @@ a:visited, a:link {
   footer p {
     font-size: 16px;
   }
+
+  .contact-footer ul {
+    flex-wrap: wrap;
+  }
+
+  .contact-footer li {
+    margin: 10px;
+  }
+
+  .contact-icon {
+    font-size: 25px;
+  }
 }
 
 /* For mobile screens (max-width: 480px) */
@@ -385,16 +397,30 @@ a:visited, a:link {
 
   footer {
     height: auto;
-    padding: 20px 0;
+    padding: 15px 0;
   }
 
   footer p {
+    font-size: 14px;
     line-height: normal;
   }
 
   .contact-footer ul {
     flex-direction: row;
     line-height: normal;
+  }
+  
+  .contact-footer ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact-footer li {
+    margin: 8px;
+  }
+
+  .contact-icon {
+    font-size: 20px;
   }
 }
 
